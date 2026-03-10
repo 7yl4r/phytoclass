@@ -10,7 +10,7 @@ started.
 - identify integration test, vignette, or testthat test to work from.
 - modify & test until passing
   - edit
-  - [`devtools::load_all()`](https://devtools.r-lib.org/reference/load_all.html)
+  - `devtools::load_all()`
   - run your test\|\|vignette
 - `git commit` changes
 
@@ -42,11 +42,13 @@ started.
     devtools::check_rhub()
     devtools::check_win_devel()
 
-    # 7. Bump version (choose "patch", "minor", or "major")
+    # 7. Bump version if needed
+    #    Check that NEWS.md and DESCRIPTION file match.
+    #    (choose "patch", "minor", or "major")
     usethis::use_version("patch")
 
     # 8. Build package for CRAN submission
     devtools::build()
 
     # 9. Submit to CRAN
-    devtools::submit_cran() 
+    devtools::submit_cran()

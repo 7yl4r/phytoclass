@@ -2,6 +2,8 @@
 
 ## phytoclass 2.3.1
 
+CRAN release: 2026-01-30
+
 ### Enhancements
 
 - Updated `min_max.rda` using new pigment ratio min/max from Simon
