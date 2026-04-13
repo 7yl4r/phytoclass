@@ -135,6 +135,8 @@ for convergence checking</p></dd>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Using the built-in matrices Sp and Fp.</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">5326</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">sa.example</span> <span class="op">&lt;-</span> <span class="fu">simulated_annealing_Prochloro</span><span class="op">(</span><span class="va">Sp</span>, <span class="va">Fp</span>, niter <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Removing pigments that occur in less than 1% of samples: Per, X19but, Fuco, Neox, Pra, Viol, X19hex, Allo, Zea, Lut, ChlcMGDG18, Chl_b, Dvchla, Tchla</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Removing phytoplankton taxa that map to one pigment or less:</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Condition number = 11601</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>

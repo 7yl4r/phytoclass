@@ -56,6 +56,10 @@ phytoclass::simulated_annealing(
 )
 ```
 
+    ## Removing pigments that occur in less than 1% of samples: Per, X19but, Fuco, Neox, Pra, Viol, X19hex, Allo, Zea, Chl_b, Tchla
+
+    ## Removing phytoplankton taxa that map to one pigment or less:
+
     ## $`F matrix`
     ##                      Per X19but   Fuco   Neox        Pra      Viol X19hex
     ## Prasinophytes     0.0000 0.0000 0.0000 0.1026 0.06439076 0.0995194 0.0000

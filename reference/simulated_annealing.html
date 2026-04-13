@@ -144,6 +144,8 @@ prochlorococcus (Default: "dvchl", "dvchla", "dv_chla")</p></dd>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Using the built-in matrices Sm and Fm</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">5326</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">sa.example</span> <span class="op">&lt;-</span> <span class="fu">simulated_annealing</span><span class="op">(</span><span class="va">Sm</span>, <span class="va">Fm</span>, niter <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Removing pigments that occur in less than 1% of samples: Per, X19but, Fuco, Neox, Pra, Viol, X19hex, Allo, Zea, Chl_b, Tchla</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Removing phytoplankton taxa that map to one pigment or less:</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Condition number = 826</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>

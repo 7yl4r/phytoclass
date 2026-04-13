@@ -827,6 +827,8 @@ F = F matrix
 
 ``` r
 MC <- Matrix_checks(Sm, Fm)  
+#> Removing pigments that occur in less than 1% of samples: Per, X19but, Fuco, Neox, Pra, Viol, X19hex, Allo, Zea, Chl_b, Tchla
+#> Removing phytoplankton taxa that map to one pigment or less:
 Snew <- MC$Snew
 Fnew <- MC$Fnew  
 ```
@@ -889,6 +891,8 @@ cm = weights for each column
 
 ``` r
 MC <- Matrix_checks(Sm, Fm)  
+#> Removing pigments that occur in less than 1% of samples: Per, X19but, Fuco, Neox, Pra, Viol, X19hex, Allo, Zea, Chl_b, Tchla
+#> Removing phytoplankton taxa that map to one pigment or less:
 Snew <- MC$Snew
 Fnew <- MC$Fnew
 cm <- Bounded_weights(Snew, weight.upper.bound = 30)
@@ -986,6 +990,8 @@ phytoclass::simulated_annealing(
   Fmat = F_matrix,
   user_defined_min_max = min_max_matrix
 )
+#> Removing pigments that occur in less than 1% of samples: Per, X19but, Fuco, Neox, Pra, Viol, X19hex, Allo, Zea, Chl_b, Tchla
+#> Removing phytoplankton taxa that map to one pigment or less:
 #> 
 #> Condition number = 858
 #> Iterations:         001 of 500 
